@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 400px 1fr;
+  align-items: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+i {
+  border: solid black;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 10px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+#arrowLeft {
+  justify-self: end;
+}
+
+#circleBox {
+  grid-column: 2;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 10px;
+}
+
+.circle {
+  border: solid black 1px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.full {
+  background-color: black;
+}
